@@ -38,3 +38,14 @@ function queryString(originalString) {
 	return originalString.replace(new RegExp(' ', 'g'), '+');
 }
 init();
+
+//$(function() {
+	//$(window).scroll(function() {
+	  //var winTop = $(window).scrollTop();
+	  //if (winTop >= 30) {
+		//$("body").addClass("sticky-shrinknav-wrapper");
+	 // } else{
+	//	$("body").removeClass("sticky-shrinknav-wrapper");
+	  //}
+	//});
+ // });
