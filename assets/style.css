@@ -1,4 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
 body {
+    margin: 8px;
     padding-top: 330px;
     background-color: lightblue;
     line-height: 20px;
@@ -111,9 +119,9 @@ body {
     background-color: gray;
     border-style: double;
     outline: black;
-    outline offset: 2px;
+    outline-style: 2px;
     padding: 5px;
-    font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
     width: 100%;
 }
@@ -122,5 +130,6 @@ body {
     /* responsive screen settting for max width of 800, lower than 800 will have background color as lightgreen*/
     body{
       background-color:lightgreen;
-      width: 100%;
+      width: 100%;}
+      
 }
