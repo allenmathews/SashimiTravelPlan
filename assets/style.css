@@ -6,17 +6,17 @@
 
 
 body {
-    padding-top: 400px;
-    background-image: url("Road\ Wallpaper\ High\ Quality\ Resolution\ Free\ Download\ _\ SubWallpaper.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     line-height: 20px;
+    height: 100vh;
+    overflow:hidden;
 }
 
 .container {
+  background-image: url("Road\ Wallpaper\ High\ Quality\ Resolution\ Free\ Download\ _\ SubWallpaper.jpg");
   width: auto;
   padding: 200px;
   margin: auto;
+  height:100%;
 }
 
   .sticky-shrinknav-menu {
@@ -102,8 +102,7 @@ body {
   
 
 .travel-plan {
-    max-width: max-content;
-    width: auto;
+    width: 400px;
     background-color: darkslategray;
     padding: 30px;
     color: #fefefe;
