@@ -1,5 +1,5 @@
 body {
-    padding-top: 330px;
+    padding-top: 400px;
     background-image: url("Road\ Wallpaper\ High\ Quality\ Resolution\ Free\ Download\ _\ SubWallpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,7 @@ body {
 
 .container {
   width: auto;
-  padding: 40px;
+  padding: 200px;
   margin: auto;
 }
 
@@ -122,8 +122,8 @@ body {
     width: 100%;
 }
 
-  @media screen and (max-width: 800px) {
-    /* responsive screen settting for max width of 800, lower than 800 will have background color as lightgreen*/
+  @media screen and (max-width: 1400px) {
+    /* responsive screen settting for max width of 1400, lower than 1400 will have background color as lightgreen*/
     body{
       background-color:lightgreen;
       width: 100%;
