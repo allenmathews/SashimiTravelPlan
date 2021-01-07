@@ -22,11 +22,13 @@
     <div class="confirmationPage">
         <card>
             <h3>Confirm Your Destination</h3>
-            <div class="row columns">
+            <div class="row-columns">
               <label>From</label>
+              <p id = "fromAddress"></p>
             </div>
-            <div class="row columns">
+            <div class="row-columns">
               <label>To</label>
+              <p id = "toAddress"></p>
             </div>
             <button type="button" class="primary button expanded search-button" id="confirm">
               Confirm
@@ -44,18 +46,6 @@
         </p>
     </footer>
 
-    <script>
-        var confirmbtn = document.getElementById("confirm");
-        var fromAddress = localStorage.getItem("fromAddress")
-        var toAddress = localStorage.getItem("toAddress")
-        confirmbtn.addEventListener("click", function(){
-
-    divContainer.text = localStorage.getItem("fromAddress", fromAddress);
-    divContainer.text = localStorage.getItem("toAddress", toAddress);
-
-    window.location.href = "/result.html";
-});
-    
-    </script>
+    <script src="./assets/confirmation.js"></script>"
 </body>
 </html>
