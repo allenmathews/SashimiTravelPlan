@@ -5,9 +5,9 @@ var resourceUrl = 'http://open.mapquestapi.com/directions/v2/route?';
 // 1. Insert code to to get input addresses from local storage here
 // 2. Insert code to put directions information into formatted HTML containers here
 // 3. Insert code to validate address here
-
-var departFrom = '&from=' + '11 Cranwell Street Craigieburn Victoria Australia';
-var arriveAt = '&to=' + '95 Miller Street Fitzroy North Victoria Australia';
+var directionsContainer = document.querySelector(".travel-plan");
+var departFrom = '&from=' + localStorage.getItem("fromAddress");
+var arriveAt = '&to=' + localStorage.getItem("toAddress");
 var advancedParameters = '&outFormat=json&ambiguities=ignore&routeType=fastest&doReverseGeocode=false&enhancedNarrative=false&avoidTimedConditions=false';
 
 // insert div id of container where route will be displayed
@@ -24,10 +24,14 @@ function init() {
 }
 function displayRoute(response) {
 	//code to loop through all directions in response and insert narritve,distance and time
+	console.log('response = ', response);
 	for (var i = 0; i < response.route.legs[0].maneuvers.length; i++) {
 		var narrative = response.route.legs[0].maneuvers[i].narrative;
 		var distance = response.route.legs[0].maneuvers[i].distance;
 		var time = response.route.legs[0].maneuvers[i].formattedTime;
+		var direction =	document.createElement("div");
+		direction.textContent = narrative + " - " + distance + "km - " + time;
+		directionsContainer.appendChild(direction);
 	}
 }
 function validateAddresss(address) {
