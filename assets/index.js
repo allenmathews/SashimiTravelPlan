@@ -42,3 +42,4 @@ function queryString(originalString) {
 	return originalString.replace(new RegExp(' ', 'g'), '+');
 }
 init();
+

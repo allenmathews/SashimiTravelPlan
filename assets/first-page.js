@@ -9,5 +9,5 @@ searchbtn.addEventListener("click", function(){
     localStorage.setItem("fromAddress", fromAddress);
     localStorage.setItem("toAddress", toAddress);
 
-    window.location.href = "/confirmation.html";
+    window.location.href = "confirmation.html";
 });
